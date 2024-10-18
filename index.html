@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saskia Maria Alexandra - Special Agent</title>
+    <!-- Correctly linked styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Correctly linked scripts.js -->
+    <script src="js/scripts.js" defer></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5eHbN3wlw0ckYgGnFNzIHicN+wV91wORpnFeqq" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">AGENT S.M.A</div>
+        <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">Profile</a></li>
+            <li><a href="#projects">Operations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <header id="home" class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="videos/hero-background.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Agent Saskia Maria Alexandra</h1>
+            <p>Special Agent in Social Work & Intelligence Operations</p>
+            <a href="#about" class="btn">Discover More</a>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="introduction">
+        <div class="container">
+            <h2>Welcome</h2>
+            <p>
+                Welcome to the official dossier of Agent Saskia Maria Alexandra. As a distinguished operative specializing in social intelligence and covert operations, Saskia has dedicated her career to safeguarding national security and promoting global stability.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Profile</h2>
+            <!-- Profile Picture -->
+            <div class="profile">
+                <img src="images/saskia.jpg" alt="Agent Saskia Maria Alexandra">
+            </div>
+            <div class="about-content">
+                <p>
+                    With a dual expertise in social work and intelligence, Agent Alexandra brings a unique perspective to her missions. Holding a Bachelor of Arts in Social Work from the University of Berlin and extensive training in intelligence operations, she has been instrumental in executing high-stakes assignments with precision and discretion.
+                </p>
+                <p>
+                    Her commendations include successful interventions in international cybercrime, human trafficking networks, and undercover operations that have significantly impacted global security efforts.
+                </p>
+            </div>
+            <!-- Skills and Stats -->
+            <div class="skills">
+                <div class="skill" data-progress="95%">
+                    <h3>Strategic Planning</h3>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="skill" data-progress="90%">
+                    <h3>Cyber Intelligence</h3>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="skill" data-progress="93%">
+                    <h3>Covert Operations</h3>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Operations</h2>
+            <div class="project-gallery">
+                <!-- Project Item 1 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Operation Silent Hawk">
+                        <div class="overlay">
+                            <h3>Operation Silent Hawk</h3>
+                            <p>
+                                A classified mission targeting cyber espionage activities affecting national infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 2 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Mission Deep Echo">
+                        <div class="overlay">
+                            <h3>Mission Deep Echo</h3>
+                            <p>
+                                Undercover operation dismantling transnational trafficking rings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 3 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Project Phoenix">
+                        <div class="overlay">
+                            <h3>Project Phoenix</h3>
+                            <p>
+                                Leading rehabilitation initiatives for reintegration of former operatives.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="contact-note">For secure communications, please use the encrypted form below.</p>
+            <form action="#" method="post">
+                <label for="name">Code Name</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+
+                <label for="email">Secure Email</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+
+                <label for="message">Encrypted Message</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+
+                <button type="submit">Transmit Securely</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- News Ticker -->
+    <section class="news-ticker">
+        <div class="ticker">
+            <p id="news"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Agent Saskia Maria Alexandra | <a href="#">Disclaimer</a></p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>
